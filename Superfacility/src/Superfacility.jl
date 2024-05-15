@@ -1,3 +1,4 @@
+module Superfacility
 module SFAPI
 
 include("data.jl")
@@ -25,3 +26,4 @@ include("status.jl")
 using .Status
 
 end # module SFAPI
+end

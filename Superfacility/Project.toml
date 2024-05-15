@@ -1,6 +1,6 @@
-name = "SFAPI"
+name = "Superfacility"
 uuid = "f7a38f07-e5d6-4eec-ba19-7d8f01225f45"
-authors = ["Johannes Blaschke <johannes@blaschke.science>"]
+authors = ["Johannes Blaschke <jpblaschke@lbl.gov>"]
 version = "0.1.0"
 
 [deps]
