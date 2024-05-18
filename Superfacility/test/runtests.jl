@@ -1,6 +1,6 @@
 using Test, ResultTypes
 
-using SFAPI
+using Superfacility: SFAPI
 
 @testset "Status" begin
     @test length(SFAPI.Status.CenterStatus(SFAPI.Query.get("status"))) > 0
