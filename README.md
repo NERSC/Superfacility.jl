@@ -55,3 +55,25 @@ This is how you would repeatedly poll the SFAPI to check if the command is done
 running. `SFAPI.Executable.result` does repeatedly check the status, and fetches
 the result when done (continuously refreshing the API token). So progress is
 made even when not checking `istaskdone`.
+
+### Obtaining a sshproxy key/certificate
+
+You can create a script like the following to use on the command line.
+
+```bash
+#!/usr/bin/env julia
+include("<path-to-Superfacility.jl>/Superfacility")
+push!(LOAD_PATH, "<path-to-Superfacility.jl>/Superfacility/Superfacility")
+using Superfacility: SshProxy
+SshProxy.sshproxy()
+```
+
+```
+$ ./sshproxy_jl -h
+usage: sshproxy_jl [--username USERNAME] [--collab COLLAB] [-h]
+
+optional arguments:
+  --username USERNAME
+  --collab COLLAB
+  -h, --help           show this help message and exit
+```
