@@ -26,4 +26,8 @@ include("status.jl")
 using .Status
 
 end # module SFAPI
+
+include("sshproxy.jl")
+using .SshProxy
+
 end
